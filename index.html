@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NEON SHIFT: Reality Runner</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="gameShell"><canvas id="game" width="1280" height="720" aria-label="Neon Shift game"></canvas>
+  <section id="menu" class="overlay"><div class="panel"><p class="eyebrow">DIMENSIONAL RUNNER // v1.0</p><h1>NEON <em>SHIFT</em></h1><h2>REALITY RUNNER</h2><p class="intro">Sprint through a broken digital city. Press <b>Q</b> to phase between realities—each world reveals a different route.</p>
+  <div class="buttons"><button id="play">PLAY</button><button id="how">HOW TO PLAY</button><button id="sound">SOUND: ON</button></div>
+  <div id="instructions"><b>CONTROLS</b><span>A / ← — left &nbsp; D / → — right</span><span>W / ↑ / SPACE — jump &nbsp; Q — reality shift</span><span>P — pause &nbsp; R — restart after game over</span></div></div></section>
+  <section id="pause" class="overlay hidden"><div class="panel small"><h2>PAUSED</h2><p>PRESS P TO RESUME</p></div></section>
+  <section id="complete" class="overlay hidden"><div class="panel small"><h2>SECTOR CLEARED</h2><p id="completeText"></p><p>PREPARING NEXT REALITY...</p></div></section>
+  <section id="over" class="overlay hidden"><div class="panel small"><p class="eyebrow">SIGNAL LOST</p><h2>GAME OVER</h2><div id="stats"></div><button id="restart">RESTART RUN</button><p>PRESS R TO RESTART</p></div></section>
+  <div id="hud" class="hidden"><div><b>SCORE</b><span id="score">000000</span></div><div><b>HIGH SCORE</b><span id="high">000000</span></div><div><b>ENERGY</b><span id="energy">0</span></div><div><b>HEALTH</b><span id="health">♥♥♥</span></div><div><b>LEVEL</b><span id="level">1</span></div><div><b>REALITY</b><span id="reality">A</span></div><div><b>SHIFT</b><span id="cooldown">READY</span></div></div>
+</main><script src="script.js"></script>
+</body></html>
